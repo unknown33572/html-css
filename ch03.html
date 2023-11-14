@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>열차 시간표</title>
+  <style>
+    table, tr, th, td {
+      border: solid 1px black;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>KTX 열차 시간표</h3>
+  <table>
+    <tr> <!-- <tr> 태그는 테이블의 행을 만드는 태그 -->
+      <th>출발</th><th>도착</th><th colspan="2">객실/요금</th> <!-- <th> 태그는 테이블의 헤더를 만드는 태그 colspan은 컬럼 수 병합 -->
+      <th>예약</th>
+    </tr>
+    <tr>
+      <td>서울</td><td>부산</td><td>일반실</td><td>5만원</td>
+      <td><a href="http://www.letskorail.com">예약</a></td> <!-- <a> 태그는 링크를 만드는 태그 -->
+    </tr>
+    <tr>
+      <td>서울</td><td>부산</td><td>특실</td><td>10만원</td>
+      <td><a href="http://www.letskorail.com">예약</a></td>
+    </tr>
+  </table>
+</body>
+</html>
