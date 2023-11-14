@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 폼</title>
+</head>
+<body>
+  <h3>회원가입 폼</h3>
+  <table>
+    <tr>
+      <td>아이디</td><td><input type="text" name="id" placeholder="ID"></td>
+    </tr>
+    <tr>
+      <td>비밀번호</td><td><input type="password" name="pw" placeholder="Password"></td>
+    </tr>
+    <tr>
+      <td>비밀번호 확인</td><td><input type="password" name="pw_check" placeholder="Password Check"></td>
+    </tr>
+    <tr>
+      <td>이름</td><td><input type="text" name="name" placeholder="Name"></td>
+    </tr>
+    <tr>
+      <td>이메일</td>
+      <td>
+        <input type="text" name="email" placeholder="Put on your EmailAdress">@
+        <select name="email_option" id="email_option">
+          <option value="naver.com">naver.com</option>
+          <option value="gmail.com">gmail.com</option>
+          <option value="custom">직접입력</option>
+        </select>
+        <input type="text" id="custom_email" name="custom_email" style="display: none;">
+      </td>
+    </tr>
+    <tr>
+      <td>가입경로</td>
+      <td>
+        <input type="radio" name="path" value="인터넷 검색">인터넷 검색
+        <input type="radio" name="path" value="지인 추천">지인 추천
+        <input type="radio" name="path" value="기타">기타
+      </td>
+    </tr>
+  </table>
+  <script>
+    document.getElementById('email_option').addEventListener('change', function() {
+      let customEmailField = document.getElementById('custom_email');
+      if(this.value == 'custom') {
+        customEmailField.style.display = 'inline';
+      } else {
+        customEmailField.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
