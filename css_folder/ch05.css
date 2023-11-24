@@ -1,0 +1,12 @@
+body {
+  background-color: lightyellow;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: royalblue;
+}
