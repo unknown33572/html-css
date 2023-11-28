@@ -1,0 +1,28 @@
+table {
+  border-collapse: collapse;
+  border-top: solid 3px black;
+}
+td {
+  border-bottom: solid 1px #cccccc;
+  padding: 10px;
+}
+.col1 {
+  width: 80px;
+}
+input {
+  width: 500px;
+  height: 25px;
+}
+textarea {
+  width: 500px;
+  height: 100px;
+}
+#buttons {
+  width: 620px;
+  text-align: right;
+  margin-top: 20px;
+}
+button {
+  padding: 5px 20px;
+  margin-left: 3px;
+}

@@ -34,6 +34,26 @@
       width: 200px;
       height: 28px;
     }
+    .email input {
+      width: 100px;
+      height: 25px;
+    }
+    #buttons {
+      width: 510px;
+      text-align: right;
+    }
+    #buttons button {
+      padding: 8px 20px;
+      margin-top: 20px;
+    }
+    .email, .email + li {
+    display: inline-flex; /* 인라인 플렉스로 변경 */
+    align-items: center; /* 세로 정렬 */
+    }
+    .email + li select {
+      width: auto; /* select 요소의 너비를 자동 조정 */
+      height: 28px; /* 기존과 동일 */
+    }
   </style>
 </head>
 <body>
@@ -67,12 +87,12 @@
       <li>
         <ul class="cols">
           <li class="col1">이메일</li>
-          <li class="col2"><input type="text"> @ </li>
+          <li class="email"><input type="text"> @ </li>
           <li>
-            <select name="" id="">
-              <option value="">직접입력</option>
-              <option value="">naver.com</option>
-              <option value="">gmail.com</option>
+            <select>
+              <option>직접입력</option>
+              <option>naver.com</option>
+              <option>gmail.com</option>
             </select>
           </li>
         </ul>
