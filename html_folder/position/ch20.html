@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #position_static_parent {
+      width: 500px;
+      /* height: 500px; static 요소가 있으면 자식 요소는 부모 요소에 영향을 줌 */
+      background-color: yellow;
+    }
+    #position_static_child { /*position: static; 자식 요소를 기준으로 여백이 결정됨*/
+      position: static;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="position_static_parent">
+    <div id="position_static_child"></div>
+  </div>
+</body>
+</html>

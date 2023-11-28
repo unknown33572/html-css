@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #box1 {
+      width: 500px;
+      height: 200px;
+      background-color: yellow;
+    }
+    #position_absolute_parent {
+      position: relative; /*position: 자식 요소가 absolute이면 부모 요소를 기준으로 위치가 고정됨*/
+      width: 500px;
+      height: 500px; /*absolute 요소가 있으면 자식 요소는 부모 요소에 영향을 줌*/
+      background-color: red;
+    }
+    #position_absolute_child { /*position: fixed; 부모 요소를 기준으로 위치가 고정됨*/
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      margin-top: 100px;
+      top: 100px; /*absolute 요소는 top, left, right, bottom 속성을 사용할 수 있음 부모 요소에 포지션이 없으면 body기준*/
+    }
+  </style>
+</head>
+<body>
+  <div id="box1"></div>
+  <div id="position_absolute_parent">
+    <div id="position_absolute_child"></div>
+  </div>
+</body>
+</html>

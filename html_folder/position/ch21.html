@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #box1 {
+      width: 500px;
+      height: 200px;
+      background-color: yellow;
+    }
+    #position_fixed_parent {
+      width: 500px;
+      /* height: 100px; fixed 요소가 있으면 자식 요소는 부모 요소에 영향을 주지 않음 */
+      background-color: red;
+    }
+    #position_fixed_child { /*position: fixed; 해당 요소를 기준으로 위치가 고정됨*/
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      margin-top: 0px;
+      top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box1"></div>
+  <div id="position_fixed_parent">
+    <div id="position_fixed_child"></div>
+  </div>
+</body>
+</html>
