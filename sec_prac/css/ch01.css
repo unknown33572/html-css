@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 2em;
+  color: #080808;
+  margin: 10px 0;
+  text-shadow: 3px 3px 3px #ccc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:link, a:visited {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #00ff00;
+  text-decoration: underline;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #ccc;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #080808;
+}
+
+label {
+  display: inline-block;
+  margin: 1px 0;
+  text-align: center;
+}
